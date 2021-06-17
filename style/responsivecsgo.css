@@ -1,0 +1,25 @@
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    main .video {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    main .video {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .video {
+        margin-left: 0%;
+        width: 100%;
+    }
+}

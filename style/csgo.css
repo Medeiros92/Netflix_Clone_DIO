@@ -1,0 +1,139 @@
+/* Importa Fonte Local */
+@font-face {
+    font-family: 'Motiva';
+    src: url('/style/fonts/Motiva-Sans.otf') format('opentype'), url('/style/fonts/Motiva-Sans.ttf') format('truetype'), url('/style/fonts/Motiva-Sans.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Crira variáveis */
+:root {
+    --vermelho:rgba(229, 9, 20, 0.255);
+    --preto:#020202;
+    --branco:rgba(170, 170, 170, 0.151);
+}
+
+/* Reseta Valores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* elementos base */
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Link da Logo */
+#logoin {
+    text-decoration: none;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times, serif;
+    font-size: 40px;
+    margin-left: 5px;
+    transition: .3s ease all;
+}
+
+header .logo:hover {
+    color: rgb(229, 9, 20);
+}
+
+/* Menus de navegação */
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+color: var(--branco);
+text-decoration: none;
+display: inline-block;
+padding: 10px;
+}
+
+.dp-menu ul li a:hover {
+    color: white;
+
+}
+
+    .dp-menu ul ul li a:hover {
+        color: var(--preto);
+        font-weight: bold;
+        font-size: 14px;
+        background-color: whitesmoke;
+}
+
+.dp-menu ul #logout {
+    display: none;
+    left: -10px;
+    position: absolute;
+    background-color: var(--preto)
+}
+
+.dp-menu ul #categoria {
+    display: none;
+    left: 0px;
+    position: absolute;
+    background-color: var(--preto)
+}
+
+.dp-menu ul li:hover #logout {
+    display: block;
+}
+
+.dp-menu ul li:hover #categoria {
+    display: block;
+}
+
+.dp-menu ul #logout {
+width: 50px;
+}
+
+.dp-menu ul #categoria {
+    width: 80px;
+    text-align: center;
+}
+
+.dp-menu ul #logout li a {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dp-menu ul #categoria li a {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.categoria {
+    font-size: 30px;
+    padding: 0px 10px;
+    font-family: 'Notiva';
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+.video {
+margin-left: 20%;
+margin-top: 5%;
+}
